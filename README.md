@@ -2,11 +2,13 @@
 
 # Project Name
 
-## Bookstore website: initialize project with components
+## Bookstore website: add reducers and actions
 
 > Description the project.
 
-This project will lay foundations for my Bookstore website. I created the React part of the app. I also set up routing using React Router.
+
+In this step, I configured my Redux Store and wrote actions and reducer for adding and removing books. 
+NOTE: editing an existing book and updating the progress is not part of this step. Neither is the styling of the application's components but adding and removing actions need to be implemented.
 
 ## Built With
 
@@ -22,7 +24,7 @@ This project will lay foundations for my Bookstore website. I created the React 
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link]
 
 
 ## Getting Started
