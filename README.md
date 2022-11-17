@@ -23,7 +23,7 @@ NOTE: editing an existing book and updating the progress is not part of this ste
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link]
 
 
 ## Getting Started
