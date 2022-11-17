@@ -1,7 +1,7 @@
 /* eslint-disable */ 
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { checkStatus } from '../redux/ categories /categories';
+import { checkStatus } from '../redux/categories/categories';
 
 function Categories() {
   const [messagePlaceholder, setMessage] = useState('');
