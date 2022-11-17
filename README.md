@@ -2,11 +2,12 @@
 
 # Project Name
 
-## Bookstore website: initialize project with components
+## Bookstore: Use Redux in React components.
 
 > Description the project.
 
-This project will lay foundations for my Bookstore website. I created the React part of the app. I also set up routing using React Router.
+In this step I used Redux store to display books. Ialso added some UI elements to my components and made them dispatch actions. 
+NOTE: editing an existing book and updating the progress is not part of this step. Neither is the styling of the application's components.
 
 ## Built With
 
