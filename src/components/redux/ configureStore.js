@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import { configureStore } from '@reduxjs/toolkit';
-import handleBook from './ books/books';
+import handleBook from './books/book';
 import handleStatus from './categories/categories';
 
 const reducers = combineReducers({
@@ -10,5 +10,3 @@ const reducers = combineReducers({
 const store = configureStore({
   reducer: reducers,
 });
-
-export default store;
