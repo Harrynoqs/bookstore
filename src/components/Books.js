@@ -1,10 +1,16 @@
 /* eslint-disable */ 
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchBooks } from '../redux/books/books';
 import Book from './Book';
 import AddNewBook from './Newbook';
 
 function Books() {
-  const books = useSelector((state) => state.handleBook);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, []);
+  const books = useSelector((state) => state.handleBook.entities);
   return (
     <>
       <div className="book--container">

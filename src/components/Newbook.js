@@ -28,8 +28,14 @@ function AddNewBook() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addBook(parseInt(uuidv4(), 10), inputs.title, inputs.author));
-  };
+    const newBook = {
+      item_id: uuidv4(),
+      title: inputs.title,
+      author: inputs.author,
+      category: 'none',
+    };
+    dispatch(addBook(newBook));
+    };
   return (
     <form>
       <input
