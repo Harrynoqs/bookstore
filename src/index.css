@@ -21,10 +21,11 @@ body {
 
 #navbar {
   display: flex;
+  justify-content: space-between;
+  width: 81%;
+  height: 76px;
+  margin: 0 auto;
   align-items: center;
-  height: 5.938rem;
-  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
-  background-color: #fff;
 }
 
 #navbar nav {
@@ -169,13 +170,29 @@ span.authorCard {
 .book-details {
   display: flex;
   align-items: center;
-  gap: 55px;
+  gap: 30px;
 }
 
 .chartColumn {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+
+.pie {
+  --w: 100px;
+
+  width: var(--w);
+  /* stylelint-disable-next-line csstree/validator */
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  place-content: center;
+  margin: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
 }
 
 .pie::before {
@@ -188,18 +205,6 @@ span.authorCard {
   mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
 }
 
-.pie {
-  --w: 100px;
-
-  width: var(--w);
-  position: relative;
-  display: inline-grid;
-  place-content: center;
-  margin: 5px;
-  font-size: 25px;
-  font-weight: bold;
-  font-family: sans-serif;
-}
 
 .chartDescription {
   display: flex;
@@ -226,4 +231,14 @@ span.authorCard {
   font-size: 0.9rem;
   font-weight: 500;
   color: #c0c0c0;
+}
+
+.userProfile-container {
+  margin-right: 2px;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px rgb(232, 232, 232);
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
 }

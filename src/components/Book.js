@@ -14,7 +14,7 @@ function Book(props) {
 
   return (
     <div className="Bookstore-CMS ">
-      <div>
+      <div className="column1">
         <span className="category">Category</span>
         <h2>{title}</h2>
         <span className="authorCard">{author}</span>
@@ -26,7 +26,7 @@ function Book(props) {
       </div>
       <div className="book-details">
         <div className="chartColumn">
-          <div className="pie" style={{ '--p': 28, '--b': '5px', '--c': 'cyan' }} />
+          <div className="pie" style={{ '--p': 75, '--b': '10px', '--c': '#0290ff' }} />
           <div className="chartDescription">
             <p className="perc">
               {Math.round((chapterValue / 10) * 100)}
