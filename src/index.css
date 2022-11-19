@@ -1,3 +1,253 @@
+
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.book--container {
+  padding: 1rem 3.75rem 1rem 6.25rem;
+  background-color: var(--pale-grey);
+}
+
+#header {
+  width: 100%;
+  background-color: #fff;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 81%;
+  height: 76px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+#navbar nav {
+  margin: 0 1.875rem;
+  margin-left: -40%;
+}
+
+#navbar h1 {
+  color: #0290ff;
+}
+
+#navbar a {
+  margin: 0.625rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #5c5c5c;
+}
+
+#navbar a:hover {
+  color: #000;
+}
+
+.books-container {
+  margin: 1.56rem 10%;
+}
+
+.Bookstore-CMS {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+  margin: 1.875rem;
+  margin-right: 4.5rem;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.Bookstore-CMS * {
+  background-color: #fff;
+}
+
+span.category {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #5f5f5f;
+}
+
+.Bookstore-CMS h2 {
+  margin-top: 5px;
+  margin-bottom: 1px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #1f1f1f;
+}
+
+span.authorCard {
+  color: #0290ff;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.chapter-column button {
+  cursor: pointer;
+  margin: 0.625rem 0;
+  padding: 0.625rem 25px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #0290ff;
+}
+
+.buttons button {
+  border: none;
+  font-weight: 500;
+  color: #4386bf;
+}
+
+.chapter-column button:hover {
+  background-color: #0290c0;
+}
+
+.chapter-column button:active {
+  background-color: #025090;
+}
+
+.buttons button:nth-child(2) {
+  border-left: 1px solid #c0c0c0;
+  border-right: 1px solid #c0c0c0;
+  padding: 0 10px;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+}
+
+#addbook-form button {
+  padding: 0.625rem 25px;
+  width: 24%;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  color: #fff;
+  background-color: #0290ff;
+}
+
+#addbook-form button:active {
+  background-color: #025090;
+}
+
+#addbook-form {
+  margin: 20px 10%;
+  border-top: 1px solid #c0c0c0;
+}
+
+#addbook-form h2 {
+  margin: 1.875rem 0;
+  color: #c2c2c2;
+}
+
+#addbook-form form {
+  display: flex;
+  gap: 15px;
+}
+
+#addbook-form input {
+  padding: 5px;
+  width: 38%;
+}
+
+#addbook-form input:focus {
+  border: 1px solid #0290ff;
+  outline: 1px solid #0290ff;
+  border-radius: 4px;
+}
+
+#addbook-form button:hover {
+  background-color: #0290c0;
+}
+
+.book-details {
+  display: flex;
+  align-items: center;
+  margin-right: 4rem;
+  gap: 30px;
+}
+
+.chartColumn {
+  display: flex;
+  align-items: center;
+
+  /* border: solid 3px red; */
+  padding-right: 4rem;
+  gap: 10px;
+}
+
+.pie {
+  --w: 100px;
+
+  width: var(--w);
+  /* stylelint-disable-next-line csstree/validator */
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  place-content: center;
+  margin: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.pie::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: 0;
+  background: conic-gradient(var(--c) calc(var(--p) * 1%), #2c2c2c54 0);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+  mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+}
+
+.chartDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chartDescription .perc {
+  font-size: 2.5rem;
+}
+
+.chartDescription .status {
+  font-size: 0.7rem;
+  color: #c0c0c0;
+}
+
+.chapter-column {
+  border-left: 2px solid #c0c0c0;
+  padding: 0 45px;
+}
+
+.chapter-column h3 {
+  margin: 0.625rem 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #c0c0c0;
+}
+
+.userProfile-container {
+  /* margin-right: 2px; */
+  justify-content: center;
+  align-items: center;
+  border: solid 1px rgb(232, 232, 232);
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
 }

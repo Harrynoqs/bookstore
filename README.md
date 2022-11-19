@@ -1,12 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Project Name: 
 
-## Bookstore: connect to API
+## Bookstore: styling
 
 > Description the project.
 
-In this project, I connected my React-Redux application to an existing API to create and remove books in a remote server.
+This is the last project of the Bookstore website. Now that all the functionality were done, I added styling. I used Zeplin as a collaboration tool.
 
 ## Built With
 
