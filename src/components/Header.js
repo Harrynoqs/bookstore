@@ -2,15 +2,13 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <nav className="navbar">
-      <div>
-        <Link to="/" className="nav-bar-logo">Bookstore CMS</Link>
-      </div>
-      <div className="nav--link">
+    <div id="navbar">
+      <h1>Bookstore CMS</h1>
+      <nav className="nav-links">
         <Link to="/">Books</Link>
         <Link to="/categories">Categories</Link>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 }
 
