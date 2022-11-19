@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name: Bookstore: styling
+# Project Name: 
 
-## Bookstore: connect to API
+## Bookstore: styling
 
 > Description the project.
 
