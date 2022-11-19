@@ -1,5 +1,4 @@
 
-
 * {
   margin: 0;
   padding: 0;
@@ -18,13 +17,11 @@ body {
 .book--container {
   padding: 9.313rem 3.75rem 7.688rem 6.25rem;
   background-color: var(--pale-grey);
-
 }
 
 #navbar {
   display: flex;
   align-items: center;
-  background-color: #fff;
   height: 5.938rem;
   padding: 1.438rem 6.188rem 1.688rem 6.25rem;
   background-color: #fff;
@@ -53,7 +50,7 @@ body {
   margin: 1.56rem 10%;
 }
 
-.Bookstore-CMS  {
+.Bookstore-CMS {
   display: flex;
   justify-content: space-between;
   padding: 20px 15px;
@@ -63,7 +60,7 @@ body {
   background-color: #fff;
 }
 
-.Bookstore-CMS  * {
+.Bookstore-CMS * {
   background-color: #fff;
 }
 
@@ -73,7 +70,7 @@ span.category {
   color: #5f5f5f;
 }
 
-.Bookstore-CMS  h2 {
+.Bookstore-CMS h2 {
   margin-top: 5px;
   margin-bottom: 1px;
   font-family: 'Times New Roman', Times, serif;
@@ -90,10 +87,28 @@ span.authorCard {
   margin-top: 15px;
 }
 
+.chapter-column button {
+  cursor: pointer;
+  margin: 0.625rem 0;
+  padding: 0.625rem 25px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #0290ff;
+}
+
 .buttons button {
   border: none;
   font-weight: 500;
   color: #4386bf;
+}
+
+.chapter-column button:hover {
+  background-color: #0290c0;
+}
+
+.chapter-column button:active {
+  background-color: #025090;
 }
 
 .buttons button:nth-child(2) {
@@ -104,6 +119,21 @@ span.authorCard {
 
 .buttons button:hover {
   cursor: pointer;
+}
+
+#addbook-form button {
+  padding: 0.625rem 25px;
+  width: 24%;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  color: #fff;
+  background-color: #0290ff;
+}
+
+#addbook-form button:active {
+  background-color: #025090;
 }
 
 #addbook-form {
@@ -132,23 +162,8 @@ span.authorCard {
   border-radius: 4px;
 }
 
-#addbook-form button {
-  padding: 0.625rem25px;
-  width: 24%;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-  font-size: 0.7rem;
-  color: #fff;
-  background-color: #0290ff;
-}
-
 #addbook-form button:hover {
   background-color: #0290c0;
-}
-
-#addbook-form button:active {
-  background-color: #025090;
 }
 
 .book-details {
@@ -175,8 +190,8 @@ span.authorCard {
 
 .pie {
   --w: 100px;
+
   width: var(--w);
-  aspect-ratio: 1;
   position: relative;
   display: inline-grid;
   place-content: center;
@@ -207,26 +222,8 @@ span.authorCard {
 }
 
 .chapter-column h3 {
-  margin: 0.625rem0;
+  margin: 0.625rem 0;
   font-size: 0.9rem;
   font-weight: 500;
   color: #c0c0c0;
-}
-
-.chapter-column button {
-  cursor: pointer;
-  margin: 0.625rem0;
-  padding: 0.625rem25px;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  background-color: #0290ff;
-}
-
-.chapter-column button:hover {
-  background-color: #0290c0;
-}
-
-.chapter-column button:active {
-  background-color: #025090;
 }
