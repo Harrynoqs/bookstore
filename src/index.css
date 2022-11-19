@@ -15,8 +15,13 @@ body {
 }
 
 .book--container {
-  padding: 9.313rem 3.75rem 7.688rem 6.25rem;
+  padding: 1rem 3.75rem 1rem 6.25rem;
   background-color: var(--pale-grey);
+}
+
+#header {
+  width: 100%;
+  background-color: #fff;
 }
 
 #navbar {
@@ -30,6 +35,7 @@ body {
 
 #navbar nav {
   margin: 0 1.875rem;
+  margin-left: -40%;
 }
 
 #navbar h1 {
@@ -55,7 +61,8 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 20px 15px;
-  margin: 1.875rem 0;
+  margin: 1.875rem;
+  margin-right: 4.5rem;
   border: 1px solid #c0c0c0;
   border-radius: 5px;
   background-color: #fff;
@@ -170,15 +177,18 @@ span.authorCard {
 .book-details {
   display: flex;
   align-items: center;
+  margin-right: 4rem;
   gap: 30px;
 }
 
 .chartColumn {
   display: flex;
   align-items: center;
+
+  /* border: solid 3px red; */
+  padding-right: 4rem;
   gap: 10px;
 }
-
 
 .pie {
   --w: 100px;
@@ -204,7 +214,6 @@ span.authorCard {
   -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
   mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
 }
-
 
 .chartDescription {
   display: flex;
@@ -234,7 +243,7 @@ span.authorCard {
 }
 
 .userProfile-container {
-  margin-right: 2px;
+  /* margin-right: 2px; */
   justify-content: center;
   align-items: center;
   border: solid 1px rgb(232, 232, 232);
